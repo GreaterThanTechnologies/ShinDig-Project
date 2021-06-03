@@ -1,4 +1,4 @@
-export function postsReducer(state = {posts: []}, action) {
+export default function postsReducer(state = {posts: []}, action) {
   switch (action.type) {
     case "ADD_POST":
       return{posts: [...state.posts, action.payload]}
